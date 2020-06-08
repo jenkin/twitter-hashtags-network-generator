@@ -19,7 +19,7 @@ if __name__ == "__main__":
     hashtag_nodes = {}
     hashtag_edges = {}
 
-    for bz2_filename in data_directory.glob("*.bz2"):
+    for bz2_filename in data_directory.glob("**/*.bz2"):
 
         jsonl_filename = bz2_filename.with_suffix(".jsonl")
 
